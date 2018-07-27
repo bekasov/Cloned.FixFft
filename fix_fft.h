@@ -1,12 +1,6 @@
+#pragma once
 
-
-#ifndef FIXFFT_H
-#define FIXFFT_H
-
-#include <WProgram.h>
-
-
-
+#include <Arduino.h>
 
 /*
  fix_fft() - perform forward/inverse fast Fourier transform.
@@ -15,8 +9,6 @@
  0 for forward transform (FFT), or 1 for iFFT.
 */
 int fix_fft(char fr[], char fi[], int m, int inverse);
-
-
 
 /*
  fix_fftr() - forward/inverse FFT on array of real numbers.
@@ -33,8 +25,3 @@ int fix_fft(char fr[], char fi[], int m, int inverse);
  real and imaginary samples in the complex array.
 */
 int fix_fftr(char f[], int m, int inverse);
-
-
-
-
-#endif
